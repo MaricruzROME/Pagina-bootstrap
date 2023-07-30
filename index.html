@@ -1,0 +1,172 @@
+<!-- esqueleto html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/imagenes/images.jpg">
+    <title>Mi primer página con Bootstrap</title>
+    <!-- link de conexión a bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+
+
+</head>
+<body >
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CACTÁCEAS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Referencias</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Datos Importantes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cuidados</a></li>
+              <li><a class="dropdown-item" href="#">Caracteristicas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Como revivirlos</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Búscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<hr>
+
+<!-- Carousel -->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1654187259014-cec2ee09cb6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80" class="d-block w-20" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1654187259642-aaaed7f113f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&w=1000&q=80" class="d-block w-20" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://backend.icserver.net/uploads/imagen/noticias/4242561885d9f83f1c7853.jpg" class="d-block w-20" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<hr>
+
+<!-- Acordión -->
+<div class="accordion" id="accordionExample" style="margin: 3%;">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        DATOS IMPORTANTES 
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>La familia Cactacea </strong> agrupa a una gran diversidad de plantas de formas globosas, cilíndricas, prismáticas y esféricas, que reducen
+        enormemente la superficie de transpiración en comparación con su volumen. La familia es originaria del continente americano, constituida por cerca de 2000 especies, distribuidas
+        desde el norte de Canadá hasta la Patagonia, y desde el nivel del mar, en dunas costeras, hasta 5100 msnm, en Perú (Jiménez-Sierra, 2011).
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        ÉXITO DE LAS CACTÁCEAS 
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Éxito de las cactáceas en ambientes áridos</strong> Las cactáceas han desarrollado características anatómicas y fisiológicas particulares, que les han permitido colonizar los ambientes áridos (Jiménez-Sierra, 2011).<BR>
+        Estas plantas presentan diversos mecanismos para adaptarse al medio en el que se desarrollan, entre ellos, la presencia de tejidos suculentos por lo que se les denomina plantas suculentas o crasas, esta expresión no se utiliza en la clasificación taxonómica, solo se emplea para designar a aquellas plantas que tienen tejidos carnosos, especializados en acumular gran cantidad de agua en sus tejidos (tallos, hojas, sistema radicular), lo cual les permite sobrevivir en ambientes relativamente secos y áridos.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        PELIGRO DE EXTINCIÓN
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>¿Por qué muchas cactáceas se encuentran en peligro de extinción?</strong> Una de las razones por las cuales muchas especies de cactáceas se encuentran en riesgo, se debe al gran endemismo de sus poblaciones. <br> El endemismo se refiere a que sus poblaciones sólo se encuentran en una determinada área geográfica. De los 913 taxones registrados para México, 25 géneros, 518 especies y 206 subespecies son endémicas de México. <br> Es decir, que el 80% de los taxones que habitan en nuestro país, no se encuentran en ninguna otra parte del mundo. La extensión geográfica ocupada por una especie endémica es muy variable (Jiménez-Sierra, 2011).<br>
+        El alto endemismo presente en las especies de cactáceas y la alta especificidad ambiental de sus poblaciones, es todavía un misterio para los científicos, pero sin duda es la causa de que muchas poblaciones y especies se encuentren en alguna categoría de riesgo de extinción. Además, el lento crecimiento de estos organismos, que es el costo que deben pagar por su metabolismo CAM, el cual les permite vivir exitosamente en ambientes con escasez de agua, hace que sus poblaciones se recuperen muy lentamente de los disturbios poblacionales, ocasionados de manera natural o como consecuencia de la actividad humana (Jiménez-Sierra, 2011).
+        
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        PRINCIPALES RIESGOS 
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Principales riesgos que enfrentan las cactáceas</strong> Las actividades antropogénicas descontroladas son una problemática en los ecosistemas ocasionando la perdida de la biodiversidad acentuándose con el incremento de la población humana (JiménezSierra, 2011).<br>
+        En primer lugar, el cambio de usos del suelo provoca que los ambientes naturales sean completamente transformados, ya sea en áreas agrícolas, ganaderas o utilizados con fines urbanos. Estas transformaciones provocan la pérdida indirecta de muchas poblaciones de especies silvestres (Jiménez-Sierra, 2011).<br>
+        En segundo lugar, la introducción de especies exóticas también ha sido causante de la desaparición de muchas especies. La llegada de ganado de diversos tipos, desde la época colonial a las comunidades desérticas de México, ha cambiado por completo el paisaje de las mismas, propiciando la desaparición de las especies más vulnerables. <br>
+        El ganado es una amenaza directa cuando utiliza las cactáceas como forraje vivo, mientras que en otras ocasiones transforma la dinámica de la comunidad vegetal, pues la extracción del follaje de árboles y arbustos disminuye las áreas protegidas de la insolación, donde algunas especies de cactáceas suelen vivir. Por otro lado, el pisoteo pone en riesgo a muchas especies de cactáceas, y disminuye las posibilidades de reclutamiento de nuevos individuos (Jiménez-Sierra, 2011).<br>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!-- tarjetas -->
+<div class="row align-items-md-stretch" style=" margin: 25%; margin-top: 9%;">
+  <div class="col-md-6">
+    <div class="h-100 p-5 text-bg-dark rounded-3">
+      <h2>Cactus y Humedad</h2>
+      <p>Como cualquier otra planta, el cactus mejora la calidad del aire que respiramos, y nos genera sensaciones positivas. <br> Un cactus en el hogar sirve también para nivelar la humedad del aire y purificarlo; esto ayuda a prevenir la sequedad de la piel, la garganta y las mucosas, así como la irritación y la tos.</p>
+      <button class="btn btn-outline-light" type="button">conocer más</button>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+      <h2>El cactus vitalidad y de alegría.</h2>
+      <p>Suelen ser plantas que aportan buenas energías. Por ejemplo, puedes añadir un cactus pequeño en la zona de trabajo ya que dicen que ayudan a recoger las energías de los dispositivos electrónicos.<br> Muchos estudios y expertos coinciden en que tener plantas en casa resulta muy beneficioso para la salud, tanto física como mental, y contribuyen a mejorar la concentración, por lo que resultan una gran ayuda en los espacios de trabajo.</p>
+      <button class="btn btn-outline-secondary" type="button">conocer más</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- card -->
+  <div class="card" style="width: 18rem; margin-top: -50%; margin-left: 6%;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOKqc3lW9UsuY0KKh9VcvW0GhhZQhe9a_htA&usqp=CAU" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Cactus</h5>
+      <p class="card-text">Los cactus, también conocidos como cactáceas, son una familia de plantas capaces de almacenar grandes cantidades de agua en su cuerpo.</p>
+      <a href="#" class="btn btn-primary">saber más</a>
+    </div>
+<hr>
+
+    <!-- link de conexión a bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
